@@ -1,0 +1,10 @@
+<main class="hero">
+  <p class="brand">Vangora</p>
+  <h1>{{ title() }}</h1>
+  <p class="lead">{{ subtitle() }}</p>
+  <ol class="flow" aria-label="Pasos del pipeline">
+    @for (step of steps(); track step) {
+      <li>{{ step }}</li>
+    }
+  </ol>
+</main>
