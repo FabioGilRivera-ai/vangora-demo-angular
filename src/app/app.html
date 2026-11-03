@@ -1,5 +1,10 @@
 <main class="hero">
   <p class="brand">Vangora</p>
+  @if (release(); as r) {
+    <p class="release" [attr.data-track]="r.track">
+      Versión <strong>{{ r.version }}</strong> · {{ r.track }}
+    </p>
+  }
   <h1>{{ title() }}</h1>
   <p class="lead">{{ subtitle() }}</p>
   <ol class="flow" aria-label="Pasos del pipeline">

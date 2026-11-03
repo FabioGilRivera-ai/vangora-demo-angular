@@ -56,3 +56,18 @@ h1 {
   content: counter(step) '. ';
   color: #a9b6cc;
 }
+
+/* Release badge: teal for the stable release, orange for the canary one. */
+.release {
+  display: inline-block;
+  margin: 0 0 1.5rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  color: #0b1220;
+  background: #5eead4;
+}
+
+.release[data-track='canary'] {
+  background: #fb923c;
+}
